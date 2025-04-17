@@ -1,58 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>My Web Page</title>
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- Task 2: Headings, Paragraphs, HR, BR -->
-    <h1>Welcome to My Web Page</h1>
-    <h2>This is an H2 Heading</h2>
-    <h3>This is an H3 Heading</h3>
-    <h4>This is an H4 Heading</h4>
-    <h5>This is an H5 Heading</h5>
-    <h6>This is an H6 Heading</h6>
-
-    <p>This paragraph gives you a brief intro about the page.</p>
-    <hr>
-    <p>This is a second paragraph.<br>
-        And this line starts after a line break.</p>
-
-    <!-- Task 3: Lists -->
-    <h2>My Top 5 Favorite Books</h2>
-    <ol>
-        <li>The Alchemist</li>
-        <li>Atomic Habits</li>
-        <li>Sapiens</li>
-        <li>1984</li>
-        <li>Clean Code</li>
-    </ol>
-
-    <h2>My Top 5 Hobbies</h2>
+    <!-- Navigation -->
     <ul>
-        <li>Reading</li>
-        <li>Photography</li>
-        <li>Traveling</li>
-        <li>Playing Guitar</li>
-        <li>Learning New Skills</li>
+        <li><a href="form.html">Sign Up</a></li>
+        <li><a href="bootstrap.html">Portfolio</a></li>
     </ul>
 
-    <!-- Task 4: Images with alt text -->
-    <h2>My Favorite Images</h2>
-    <img src="https://via.placeholder.com/200" alt="Placeholder image of a nature scene" width="200">
-    <img src="https://via.placeholder.com/150" alt="Another placeholder image" width="150">
+    <!-- Part 1: Task 2 - Headings, Paragraphs, HR, BR -->
+    <h1>Hello, I’m a Web Developer!</h1>
+    <h2>Studying at SUZA</h2>
+    <h3>Computer Science Enthusiast</h3>
+    <h4>Building Websites</h4>
+    <h5>CS/INF2215 Lab 1</h5>
+    <h6>First Web Project</h6>
+    <p>Welcome to my portfolio page, showcasing my web development skills.</p>
+    <hr>
+    <p>Here’s more about my journey.<br>Started learning HTML recently!</p>
 
-    <!-- Task 5: Links -->
-    <h2>Useful Links</h2>
+    <!-- Part 1: Task 3 - Lists -->
+    <h2>Favorite Programming Books</h2>
+    <ol>
+        <li>"Eloquent JavaScript"</li>
+        <li>"Python Crash Course"</li>
+        <li>"HTML and CSS: Design and Build Websites"</li>
+        <li>"JavaScript: The Definitive Guide"</li>
+        <li>"Clean Code"</li>
+    </ol>
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Coding Projects</li>
+        <li>Playing Volleyball</li>
+        <li>Exploring Tech Blogs</li>
+        <li>Graphic Design</li>
+        <li>Traveling</li>
+    </ul>
+
+    <!-- Part 1: Task 4 - Images with alt text -->
+    <h2>Featured Images</h2>
+    <img src="images/tech.png" alt="Technology icon" width="200">
+    <img src="images/code.png" alt="Code snippet illustration" width="150">
+
+    <!-- Part 1: Task 5 - Links -->
+    <h2>Resources I Use</h2>
     <p>
-        Visit <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a><br>
-        Watch videos on <a href="https://www.youtube.com" target="_blank">YouTube</a><br>
-        Learn code at <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
+        Study at <a href="https://www.suza.ac.tz" target="_blank">SUZA</a><br>
+        Learn from <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a><br>
+        Code on <a href="https://codepen.io" target="_blank">CodePen</a>
     </p>
 
-</body>
+    <!-- Part 1: Challenge - Table -->
+    <h2>My Study Schedule</h2>
+    <table style="width: 100%;" border="1">
+        <tr>
+            <th>Day</th>
+            <th>Morning</th>
+            <th>Afternoon</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Web Dev Lecture</td>
+            <td>Lab Session</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Database Class</td>
+            <td>Group Study</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Algorithms</td>
+            <td>Volleyball</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Software Engineering</td>
+            <td>Project Coding</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Flutter Workshop</td>
+            <td>Relax</td>
+        </tr>
+    </table>
 
+    <!-- Part 1: Questions -->
+    <h2>Role of the Head Section</h2>
+    <p>The head section holds metadata, such as title, charset, and links to stylesheets, controlling the webpage’s setup and display.</p>
+
+    <h2>Importance of Semantic Tags</h2>
+    <p>Semantic tags like section, article, and footer organize content clearly, boost accessibility, and improve SEO.</p>
+
+    <!-- Part 2: DOM Questions and Task 4 (Nested Structure) -->
+    <h1>Part 2: Exploring the DOM</h1>
+    <p>The HTML file is static code, while the DOM is the browser’s dynamic, tree-like structure of the webpage, editable via JavaScript.</p>
+    <p>Modifying DOM nodes in developer tools changes the live page temporarily, not the HTML file, and resets on refresh.</p>
+    <h2 id="content-title">DOM Structure</h2>
+    <div class="container">
+        <p>This text is nested in a div, a child of the body in the DOM hierarchy.</p>
+    </div>
+
+    <!-- Part 4: CSS Questions -->
+    <h2>Part 4: CSS Basics</h2>
+    <p>Inline CSS uses the style attribute for single elements.</p>
+    <p>Internal CSS is in a style tag in the head for one file.</p>
+    <p>External CSS is a separate .css file, reusable across pages.</p>
+    <p>Style conflicts are resolved by specificity (ID > class > element) or the last rule in the cascade.</p>
+
+    <!-- Part 5: Responsive Design -->
+    <h2>Part 5: Responsive Web</h2>
+    <div class="navbar">Site Navigation</div>
+    <p>Responsive design adapts websites to various devices, ensuring usability and aesthetics on all screen sizes.</p>
+    <p>Mobile-first design focuses on smaller screens first, optimizing performance before scaling to larger displays.</p>
+</body>
 </html>

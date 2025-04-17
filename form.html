@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Sign Up Form</h2>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+        <!-- Part 3: Task 1 - Input Fields -->
+        <fieldset>
+            <legend>User Details</legend>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+        </fieldset>
+
+        <!-- Part 3: Task 1 - Interests -->
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" id="design" name="hobbies" value="design">
+            <label for="design">Graphic Design</label><br>
+            <input type="checkbox" id="coding" name="hobbies" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Music</label><br><br>
+        </fieldset>
+
+        <!-- Part 3: Task 2 - Dropdown, Task 3 - Submit Button -->
+        <fieldset>
+            <legend>Profile Info</legend>
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="">Choose a country</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Ghana">Ghana</option>
+            </select><br><br>
+
+            <!-- Part 3: Bonus - File Upload -->
+            <label for="avatar">Upload Avatar:</label><br>
+            <input type="file" id="avatar" name="avatar" accept="image/*"><br><br>
+
+            <input type="submit" value="Sign Up">
+        </fieldset>
+
+        <!-- Part 3: Questions -->
+        <h2>Form FAQs</h2>
+        <p>GET sends data via URL (visible, limited), while POST sends it in the request body (secure, unlimited).</p>
+        <p>Missing required fields triggers a browser error, halting submission until filled.</p>
+    </form>
+</body>
+</html>
